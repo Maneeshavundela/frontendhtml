@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="p1">hii good morning</h1>
+    <p class="p1">hii good afternoon</p>
+    <h3 class="p1">hii good night</h3>
+    <button ondblclick="prn()">click</button>
+</body>
+<script src="mani2.js"></script>
+<script>
+    document.write("printing")
+    function prn(){
+    var data=document.getElementsByClassName("p1")
+    for(let i=0;i<3;i++)
+    console.log(data[i].innerHTML)
+}
+
+
+
+
+
+
+localStorage.setItem("name","maneesha")
+console.log(localStorage.getItem ("name"))
+localStorage.setItem("email","vundela@1234")
+console.log(localStorage.getItem("email"))
+function str(){
+this.name="mani",
+this.email="vundela@1234"
+}
+str.prototype.num=65756567465
+let a=new str();
+console.log(a.name)
+console.log(a.num)
+</script>
+</html>
